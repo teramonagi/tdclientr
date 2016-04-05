@@ -1,8 +1,8 @@
-# tdclientr [![CRAN Version](http://www.r-pkg.org/badges/version/tdclientr)](http://cran.rstudio.com/web/packages/tdclientr)
+# tdclientr [![CRAN Version](http://www.r-pkg.org/badges/version/tdclientr)](http://cran.rstudio.com/web/packages/tdclientr) ![](http://cranlogs.r-pkg.org/badges/grand-total/tdclientr) ![](https://travis-ci.org/teramonagi/tdclientr.svg?branch=master)
 
 Under construction
-## Package install
-
+## Installation
+tdclientr isn't available from CRAN yet, but you can get it from github with:
 ```R
 install.packages("devtools")
 devtools::install_github("teramonagi/tdclientr")
@@ -31,5 +31,11 @@ status(job)
 
 #Get the result
 result(job)
-
 ```
+
+## Contributing
+- Fork it ( https://github.com/teramonagi/tdclientr/fork )
+- Create your feature branch (git checkout -b my-new-feature)
+- Commit your changes (git commit -am 'Add some feature')
+- Push to the branch (git push origin my-new-feature)
+- Create a new Pull Request
