@@ -1,7 +1,8 @@
 #' Create Treasure Data client
 #'
-#' aaaaa
 #'
+#'@param api_key API key for Treasure Data. You can get this from "API Keys" on https://console.treasuredata.com/users/current
+#'@param database Database on Treasure Data to connect.
 #'@export
 td <- function(api_key, database=NULL)
 {
@@ -22,6 +23,7 @@ select_db <- function(db1, db2)
 {
   ifelse(is.null(db2), db1, db2)
 }
+
 stop_when_not_specify_db <- function(db1, db2)
 {
   if(is.null(db1) && is.null(db2)){

@@ -8,6 +8,14 @@ Authors@R: c(
   person("Shinichi", "Takayanagi", , "shinichi.takayanagi@gmail.com", "aut"))
 Maintainer: Who to complain to <yourfault@somewhere.net>
 Description: More about what it does (maybe more than one line)
-License: What license is it under?
+License: MIT + file LICENSE
+Imports:
+    stringr,
+    lubridate,
+    dplyr,
+    tidyr,
+    httr,
+    jsonlite,
+    data.table
 LazyData: TRUE
 RoxygenNote: 5.0.1

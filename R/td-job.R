@@ -2,6 +2,7 @@
 #'
 #' aaaaa
 #'
+#'@export
 td_job <- function(client, job_id, database)
 {
   structure(list(key=client$key, db=database, id=job_id), class=c("job", "td"))
@@ -19,12 +20,6 @@ status <- function(job)
   result$cpu_time <- if(is.null(result$cpu_time)){0}else{result$cpu_time}
   as.data.frame(result)
 }
-
-x <- 1:5
-xx <- structure(x,class="aClass")
-setOldClass("aClass")
-setMethod(show, "aClass", function(object) cat("S4\n"))
-show(xx)
 
 setOldClass("job")
 #'@export
