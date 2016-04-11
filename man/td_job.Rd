@@ -7,6 +7,6 @@
 td_job(client, job_id, database)
 }
 \description{
-aaaaa
+Create Treasure Data client
 }
 

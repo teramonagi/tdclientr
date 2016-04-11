@@ -16,3 +16,8 @@ schema <- function(hive_result_schema)
     type=df[seq(2, length(df), by=2)]
   )
 }
+
+to_posixct <- function(x)
+{
+  lubridate::parse_date_time(x, orders="ymd hms")
+}

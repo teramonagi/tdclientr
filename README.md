@@ -1,19 +1,28 @@
-# tdclientr [![CRAN Version](http://www.r-pkg.org/badges/version/tdclientr)](http://cran.rstudio.com/web/packages/tdclientr) ![](http://cranlogs.r-pkg.org/badges/grand-total/tdclientr) ![](https://travis-ci.org/teramonagi/tdclientr.svg?branch=master)
+# tdclientr package ![CRAN Version](http://www.r-pkg.org/badges/version/tdclientr)](http://cran.rstudio.com/web/packages/tdclientr) ![](http://cranlogs.r-pkg.org/badges/grand-total/tdclientr) ![](https://travis-ci.org/teramonagi/tdclientr.svg?branch=master)
+
+Treasure Data API library for R
 
 Under construction
+
 ## Installation
-tdclientr isn't available from CRAN yet, but you can get it from github with:
+tdclientr package isn't available from CRAN yet, but you can get it from github with:
 ```R
 install.packages("devtools")
 devtools::install_github("teramonagi/tdclientr")
 ```
 
 ## Example
+Please see also the API manual at [Treasure Data Documentation](https://docs.treasuredata.com/articles/rest-api).
+
+### Generate td client
+TreasureData API key will be read from environment or usual R variable `TD_API_KEY`, if api_key variable is `NULL` via arguments to `td()`.
 ```R
 #Generate td client
-api_key <- "<your api-key>"
-client <- td(api_key, "sample_datasets")
+client <- td(database="sample_datasets")
+```
 
+### Listing jobs
+```R
 #Show job list
 list_job(client)
 

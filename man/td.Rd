@@ -4,9 +4,14 @@
 \alias{td}
 \title{Create Treasure Data client}
 \usage{
-td(api_key, database = NULL)
+td(api_key = NULL, database = NULL)
+}
+\arguments{
+\item{api_key}{API key for Treasure Data. You can get this from "API Keys" on https://console.treasuredata.com/users/current}
+
+\item{database}{Database on Treasure Data to connect.}
 }
 \description{
-aaaaa
+Create Treasure Data client
 }
 
