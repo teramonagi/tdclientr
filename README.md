@@ -1,4 +1,4 @@
-# tdclientr package ![CRAN Version](http://www.r-pkg.org/badges/version/tdclientr)](http://cran.rstudio.com/web/packages/tdclientr) ![](http://cranlogs.r-pkg.org/badges/grand-total/tdclientr) ![](https://travis-ci.org/teramonagi/tdclientr.svg?branch=master)
+# tdclientr package [![CRAN Version](http://www.r-pkg.org/badges/version/tdclientr)](http://cran.rstudio.com/web/packages/tdclientr)  ![](http://cranlogs.r-pkg.org/badges/grand-total/tdclientr) ![](https://travis-ci.org/teramonagi/tdclientr.svg?branch=master)
 
 Treasure Data API library for R
 
