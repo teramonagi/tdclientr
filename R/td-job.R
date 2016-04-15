@@ -22,7 +22,7 @@ status <- function(job)
   response <- get(job$key, url)
   result <- jsonlite::fromJSON(content(response, "text"))
   result$cpu_time <- if(is.null(result$cpu_time)){0}else{result$cpu_time}
-  as.data.frame(result) %>%
+  as.data.frame(result, stringsAsFactors=FALSE) %>%
     dplyr::mutate_each(funs(to_posixct), created_at, updated_at, start_at, end_at)
 }
 
@@ -73,3 +73,14 @@ result <- function(job)
   colnames(res) <- schema(df$hive_result_schema)$name
   res
 }
+
+wait_finish <- function(job)
+{
+  s <- status(job)$status
+  while(s == "running"){
+    Sys.sleep(3)
+    s <- status(job)$status
+  }
+}
+
+
